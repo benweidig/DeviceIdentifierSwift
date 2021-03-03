@@ -4,7 +4,7 @@ import PackageDescription
 
 let package = Package(
     name: "DeviceIdentifier",
-    platforms: [.iOS(.v8),
+    platforms: [.iOS(.v9),
                 .watchOS(.v2)],
     products: [
         .library(

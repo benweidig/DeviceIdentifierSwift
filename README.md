@@ -4,7 +4,7 @@ A small helper to identify what kind of device and model an iOS app is running o
 
 ## Requirements
 
-iOS 8+
+iOS 9+
 watchOS 2+
 
 ## Features 
