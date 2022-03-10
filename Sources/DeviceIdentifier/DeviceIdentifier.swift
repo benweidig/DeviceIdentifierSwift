@@ -84,6 +84,11 @@ public struct DeviceIdentifier {
         case "iPhone13,2": return "iPhone 12"
         case "iPhone13,3": return "iPhone 12 Pro"
         case "iPhone13,4": return "iPhone 12 Pro Max"
+        case "iPhone14,2": return "iPhone 13 Pro"
+        case "iPhone14,3": return "iPhone 13 Pro Max"
+        case "iPhone14,4": return "iPhone 13 Mini"
+        case "iPhone14,5": return "iPhone 13"
+        case "iPhone14,6": return "iPhone SE 3rd Gen"
 
         case "iPod5,1": return "iPod 5th Gen"
         case "iPod7,1": return "iPod 6th Gen"
