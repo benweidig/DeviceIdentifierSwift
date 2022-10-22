@@ -1,7 +1,6 @@
 import Foundation
 
-public struct DeviceIdentifier {
-
+public enum DeviceIdentifier {
     /// Detects if a debugger is connected to the current process
     public static var isDebuggerConnected: Bool {
         var info = kinfo_proc()
@@ -50,13 +49,6 @@ public struct DeviceIdentifier {
         case "x86_64": return "iOS Simulator 64-bit"
         case "arm64":  return "iOS Simulator M1"
 
-        case "iPhone4,1":  return "iPhone 4s"
-        case "iPhone5,1":  return "iPhone 5 (GSM)"
-        case "iPhone5,2":  return "iPhone 5 (CDMA+LTE)"
-        case "iPhone5,3":  return "iPhone 5c (GSM)"
-        case "iPhone5,4":  return "iPhone 5c (Global)"
-        case "iPhone6,1":  return "iPhone 5s (GSM)"
-        case "iPhone6,2":  return "iPhone 5s (Global)"
         case "iPhone7,1":  return "iPhone 6 Plus"
         case "iPhone7,2":  return "iPhone 6"
         case "iPhone8,1":  return "iPhone 6s"
@@ -89,24 +81,14 @@ public struct DeviceIdentifier {
         case "iPhone14,4": return "iPhone 13 Mini"
         case "iPhone14,5": return "iPhone 13"
         case "iPhone14,6": return "iPhone SE 3rd Gen"
+        case "iPhone14,7": return "iPhone 14"
+        case "iPhone14,8": return "iPhone 14 Plus"
+        case "iPhone15,2": return "iPhone 14 Pro"
+        case "iPhone15,3": return "iPhone 14 Pro Max"
 
-        case "iPod5,1": return "iPod 5th Gen"
         case "iPod7,1": return "iPod 6th Gen"
         case "iPod9,1": return "iPod 7th Gen"
 
-        case "iPad2,1":   return "iPad 2nd Gen (WiFi)"
-        case "iPad2,2":   return "iPad 2nd Gen (GSM)"
-        case "iPad2,3":   return "iPad 2nd Gen (CDMA)"
-        case "iPad2,4":   return "iPad 2nd Gen New Revision"
-        case "iPad2,5":   return "iPad mini 1st Gen (WiFi)"
-        case "iPad2,6":   return "iPad mini 1st Gen (GSM+LTE)"
-        case "iPad2,7":   return "iPad mini 1st Gen (CDMA+LTE)"
-        case "iPad3,1":   return "iPad 3rd Gen (WiFi)"
-        case "iPad3,2":   return "iPad 3rd Gen (CDMA)"
-        case "iPad3,3":   return "iPad 3rd Gen (GSM)"
-        case "iPad3,4":   return "iPad 4th Gen (WiFi)"
-        case "iPad3,5":   return "iPad 4th Gen (GSM+LTE)"
-        case "iPad3,6":   return "iPad 4th Gen (CDMA+LTE)"
         case "iPad4,1":   return "iPad Air 1st Gen (WiFi)"
         case "iPad4,2":   return "iPad Air 1st Gen (GSM+CDMA)"
         case "iPad4,3":   return "iPad Air 1st Gen (China)"
@@ -162,6 +144,18 @@ public struct DeviceIdentifier {
         case "iPad13,9":  return "iPad Pro 5th Gen (12.9\")"
         case "iPad13,10": return "iPad Pro 5th Gen (12.9\")"
         case "iPad13,11": return "iPad Pro 5th Gen (12.9\")"
+        case "iPad13,16": return "iPad Air 5th Gen (WiFi)"
+        case "iPad13,17": return "iPad Air 5th Gen (WiFi+Cellular)"
+        case "iPad13,18": return "iPad 10th Gen"
+        case "iPad13,19": return "iPad 10th Gen"
+        case "iPad14,3-A": return "iPad Pro 4th Gen (11\")"
+        case "iPad14,3-B": return "iPad Pro 4th Gen (11\")"
+        case "iPad14,4-A": return "iPad Pro 4th Gen (11\")"
+        case "iPad14,4-B": return "iPad Pro 4th Gen (11\")"
+        case "iPad14,5-A": return "iPad Pro 6th Gen (12.9\")"
+        case "iPad14,5-B": return "iPad Pro 6th Gen (12.9\")"
+        case "iPad14,6-A": return "iPad Pro 6th Gen (12.9\")"
+        case "iPad14,6-B": return "iPad Pro 6th Gen (12.9\")"
 
         case "Watch1,1":  return "Apple Watch 1st Gen 38mm"
         case "Watch1,2":  return "Apple Watch 1st Gen 42mm"
@@ -189,6 +183,19 @@ public struct DeviceIdentifier {
         case "Watch6,2":  return "Apple Watch Series 6 44mm (GPS)"
         case "Watch6,3":  return "Apple Watch Series 6 40mm (GPS+Cellular)"
         case "Watch6,4":  return "Apple Watch Series 6 44mm (GPS+Cellular)"
+        case "Watch6,6":  return "Apple Watch Series 7 41mm (GPS)"
+        case "Watch6,7":  return "Apple Watch Series 7 45mm (GPS)"
+        case "Watch6,8":  return "Apple Watch Series 7 41mm (GPS+Cellular)"
+        case "Watch6,9":  return "Apple Watch Series 7 45mm (GPS+Cellular)"
+        case "Watch6,10":  return "Apple Watch SE 40mm (GPS)"
+        case "Watch6,11":  return "Apple Watch SE 44mm (GPS)"
+        case "Watch6,12":  return "Apple Watch SE 40mm (GPS+Cellular)"
+        case "Watch6,13":  return "Apple Watch SE 44mm (GPS+Cellular)"
+        case "Watch6,14":  return "Apple Watch Series 8 41mm (GPS)"
+        case "Watch6,15":  return "Apple Watch Series 8 45mm (GPS)"
+        case "Watch6,16":  return "Apple Watch Series 8 41mm (GPS+Cellular)"
+        case "Watch6,17":  return "Apple Watch Series 8 45mm (GPS+Cellular)"
+        case "Watch6,18":  return "Apple Watch Ultra"
 
         default: return deviceId
         }
